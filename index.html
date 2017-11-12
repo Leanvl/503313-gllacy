@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title></title>
 </head>
-
 <body>
   <header class="main-header">
     <nav class="main-navigation">
@@ -15,6 +13,24 @@
       <ul class="site-navigation">
         <li>
           <a href="catalog.html">Каталог</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="#" class="dropdown-title">Новинки</a>
+            </li>
+            <li class="dropdown-line"></li>
+            <li>
+              <a href="catalog.html">Сливочное</a>
+            </li>
+            <li>
+              <a href="#">Щербеты</a>
+            </li>
+            <li>
+              <a href="#">Фруктовый лёд</a>
+            </li>
+            <li>
+              <a href="#">Мелорин</a>
+            </li>
+          </ul>
         </li>
         <li>
           <a href="delivery.html">Доставка и оплата</a>
@@ -22,24 +38,30 @@
         <li>
           <a href="info.html">О компании</a>
         </li>
-        <li>
-          <a href="#">
-            <img src="img/magnifier.png" width="33" height="33" alt="Поиск">
-          </a>
-        </li>
       </ul>
-      <ul class="user-navigation">
-        <li class="login-link">
-          <a href="#">
-            <img src="img/logon.png" width="93" height="32" alt="Вход">
-          </a>
-        </li>
-      </ul>
-      <ul class="user-navigation">
-        <li>
-          <a href="#">Корзина</a>
-        </li>
-      </ul>
+      <div class="search">
+        <button class="search__button">
+          <img src="img/magnifier.png" width="33" height="33" alt="Поиск">
+        </button>
+        <form class="search__form">
+          <input class="search__text" type="text" name="search" value="" placeholder="Что ищем?">
+        </form>
+      </div>
+      <span class="login-link">
+        Вход
+      </span>
+        <form method="post" class="login-form">
+          <input type="email" name="email" value="" placeholder="Электронная почта">
+          <input type="password" name="password" value="" placeholder="Пароль">
+          <div class="login-problem">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </div>
+          <button class="button button-login" type="button">Войти</button>
+        </form>
+      <div class="user-navigation">
+        <a href="#">Корзина</a>
+      </div>
     </nav>
     <div class="telephone">
       <span>С 10 до 20, ежедневно</span>
@@ -52,7 +74,6 @@
       <div class="promo-slides">
         <div class="promo-slide">
           <div class="promo-slide-title">Крем-брюле и пломбир с малиновым джемом</div>
-          <img src="img/icecream1.png" width="647" height="584" alt="Мороженки">
           <a class="button button-orange" href="#">Давайте оба!</a>
         </div>
     </section>
@@ -60,7 +81,6 @@
       <div class="banner-container clearfix">
         <div class="banner">
           <div class="banner-title">Малинка даром!</div>
-          <img src="img/raspberries.jpg" alt="Малиновый фон">
           <p class="banner-text">
             При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
           </p>
@@ -68,7 +88,6 @@
         </div>
         <div class="banner">
           <div class="banner-title">Шоколадки даром!</div>
-          <img src="img/chocolate_chips.jpg" alt="Шоколадный фон">
           <p class="banner-text">
             При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
           </p>
@@ -138,28 +157,24 @@
       </h2>
       <ul class="row-container">
         <li>
-          <img src="img/icecream2.png" width="49" height="49" alt="Мороженка">
           <p class="shop-features-item shop-features_ice-cream">
             Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных
             временем технологий.
           </p>
         </li>
         <li>
-          <img src="img/cow.png" width="49" height="49" alt="Корова">
           <p class="shop-features-item shop-features_farm">
             Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывают долговременное
             сотрудничество.
           </p>
         </li>
         <li>
-          <img src="img/leaf.png" width="49" height="49" alt="Листик">
           <p class="shop-features-item shop-features_eco">
             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты
             и добавки произведены из натурального, экологически чистого сырья.
           </p>
         </li>
         <li>
-          <img src="img/thermometer.png" width="49" height="49" alt="Градусник">
           <p class="shop-features-item shop-features_delivery">
             Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути
             и позволяет сохранить превосходный вкус.
@@ -171,7 +186,6 @@
       <h3>Новое в нашем блоге</h3>
       <ul>
         <li>
-          <img src="img/strawberry_background.jpg" alt="Клубничный фон">
           <p>10 способов сервировки фруктовых щербетов к столу</p>
         </li>
       </ul>
@@ -184,10 +198,10 @@
             не спамить и не слать всякой не нужной ерунды. Честно=)</p>
         </li>
       </ul>
-      <div>
-        <label href="#">Электронная почта</label>
-        <button class="button">Отправить</button>
-      </div>
+      <form method="post">
+        <input type="email" name="email" value="" placeholder="Электронная почта">
+        <button class="button" type="submit">Отправить</button>
+      </form>
     </section>
     <div class="map-container">
       <div class="content-wrapper">
@@ -203,6 +217,13 @@
             <span class="gllacy-call-time">(с 10 до 20 ежедневно)</span>
           </p>
           <a class="button" href="#">Форма обратной связи</a>
+          <form method="post">
+            <legend>Мы обязательно вам ответим!</legend>
+            <input type="name" name="name" value="" placeholder="Как вас зовут?">
+            <input type="email" name="email" value="" placeholder="Ваша почта для ответа?">
+            <input type="text" name="text" value="" placeholder="Напишите что-нибудь...">
+            <button class="button button-login" type="button">Войти</button>
+          </form>
         </div>
       </div>
       <div class="map" id="map"></div>
@@ -212,29 +233,26 @@
       <ul>
         <li>
           <a class="social-button" href="twitter.com">
-            <img src="img/twitter.png" width="38" height="38" alt="Твитер">
           </a>
         </li>
         <li>
           <a class="social-button" href="instagram.com">
-            <img src="img/instagram.png" width="38" height="38" alt="Инстаграм">
           </a>
         </li>
         <li>
           <a class="social-button" href="facebook.com">
-            <img src="img/facebook.png" width="38" height="38" alt="Фейсбук">
           </a>
         </li>
         <li>
           <a class="social-button" href="vk.com">
-            <img src="img/vk.png" width="38" height="38" alt="Вконтакте">
           </a>
         </li>
       </ul>
     </div>
     <ul>
       <li>
-        <a class="footer-item" href="#"><img src="img/heart.png" width="15" height="13">Для поставщиков</a>
+        <a class="footer-item" href="#">
+          Для поставщиков</a>
       </li>
       <li>
         <a class="footer-item" href="#">О производстве</a>

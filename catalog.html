@@ -38,8 +38,7 @@
             <ul class="user-navigation">
                 <li>
                     <a href="#">
-                        <img="img/bag.png">
-                            <span>2 товара</span>
+                        <span>2 товара</span>
                     </a>
                 </li>
             </ul>
@@ -63,9 +62,70 @@
         <h2>Сливочное мороженное</h2>
         <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!-- Здесь будет форма -->
+            <form class="filter" method="get">
+                <fieldset>
+                    <legend>Сортировка:</legend>
+                    <input type="text" list="sorting" name="sorting">
+                    <datalist id="sorting">
+                        <option value="по популярности">
+                        <option value="сначала недорогие">
+                        <option value="сначала дорогие">
+                        <option value="по жироности">
+                    </datalist>
+                </fieldset>
+                <fieldset>
+                    <legend>Цена: 100 руб. - 500 руб. </legend>
+                    <input type="range" min="50" max="700" step="50">
+                </fieldset>
+                <fieldset>
+                    <legend>Жирность:</legend>
+                    <ul>
+                        <li class="filter-optional">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-fatiness" id="0">
+                            <label for="0">0%</label>
+                        </li>
+                        <li class="filter-optional">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-fatiness" id="to-10" checked>
+                            <label for="to-10">до 10%</label>
+                        </li>
+                        <li class="filter-optional">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-fatiness" id="to-30">
+                            <label for="to-30">до 30%</label>
+                        </li>
+                        <li class="filter-optional">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-fatiness" id="above-30">
+                            <label for="above-30">выше 30%</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Наполнители:</legend>
+                    <ul>
+                        <li class="filter-optional">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-filler" id="chocolate" checked>
+                            <label for="chocolate">Шоколадные</label>
+                        </li>
+                        <li class="filter-optional">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-filler" id="powder" checked>
+                            <label for="powder">Сахарные присыпки</label>
+                        </li>
+                        <li class="filter-optional">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-filler" id="fruit">
+                            <label for="fruit">Фрукты</label>
+                        </li>
+                        <li class="filter-optional">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-filler" id="syrup">
+                            <label for="syrup">Сиропы</label>
+                        </li>
+                        <li class="filter-optional">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-filler" id="jam">
+                            <label for="jam">Джемы</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit" class="filter-button button">Применить</button>
+            </form>
         </section>
-
         <section class="catalog">
             <h2 class="visually-hidden">Список мороженого</h2>
             <ul class="catalog-list">
@@ -286,22 +346,18 @@
             <ul>
                 <li>
                     <a class="social-button" href="twitter.com">
-                        <img src="img/twitter.png" width="38" height="38" alt="Твитер">
                     </a>
                 </li>
                 <li>
                     <a class="social-button" href="instagram.com">
-                        <img src="img/instagram.png" width="38" height="38" alt="Инстаграм">
                     </a>
                 </li>
                 <li>
                     <a class="social-button" href="facebook.com">
-                        <img src="img/facebook.png" width="38" height="38" alt="Фейсбук">
                     </a>
                 </li>
                 <li>
                     <a class="social-button" href="vk.com">
-                        <img src="img/vk.png" width="38" height="38" alt="Вконтакте">
                     </a>
                 </li>
             </ul>
@@ -309,7 +365,7 @@
         <ul>
             <li>
                 <a class="footer-item" href="#">
-                    <img src="img/heart.png" width="15" height="13">Для поставщиков</a>
+                    Для поставщиков</a>
             </li>
             <li>
                 <a class="footer-item" href="#">О производстве</a>
