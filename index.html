@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
   <header class="main-header">
     <nav class="main-navigation">
@@ -40,25 +45,23 @@
         </li>
       </ul>
       <div class="search">
-        <button class="search__button">
-          <img src="img/magnifier.png" width="33" height="33" alt="Поиск">
-        </button>
+        <a href="#">Поиск</a>
         <form class="search__form">
           <input class="search__text" type="text" name="search" value="" placeholder="Что ищем?">
         </form>
       </div>
-      <span class="login-link">
+      <span class="user-navigation">
         Вход
       </span>
-        <form method="post" class="login-form">
-          <input type="email" name="email" value="" placeholder="Электронная почта">
-          <input type="password" name="password" value="" placeholder="Пароль">
-          <div class="login-problem">
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-          </div>
-          <button class="button button-login" type="button">Войти</button>
-        </form>
+      <form method="post" class="login-form">
+        <input type="email" name="email" value="" placeholder="Электронная почта">
+        <input type="password" name="password" value="" placeholder="Пароль">
+        <div class="login-problem">
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </div>
+        <a class="button button-login" type="button">Вход</a>
+      </form>
       <div class="user-navigation">
         <a href="#">Корзина</a>
       </div>
@@ -78,22 +81,20 @@
         </div>
     </section>
     <section class="container">
-      <div class="banner-container clearfix">
-        <div class="banner">
+        <div class="banner-raspberries">
           <div class="banner-title">Малинка даром!</div>
           <p class="banner-text">
             При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
           </p>
           <a class="button button-orange" href="#">Хочу варенье!</a>
         </div>
-        <div class="banner">
+        <div class="banner-chocolate">
           <div class="banner-title">Шоколадки даром!</div>
           <p class="banner-text">
             При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
           </p>
           <a class="button button-orange" href="#">Хочу шоколадки!</a>
         </div>
-      </div>
     </section>
     <section class="container">
       <section class="catalog">
@@ -153,7 +154,8 @@
     </section>
     <section class="shop-features">
       <h2 class="shop-features-title">
-        Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
+        Магазин Глейси — это онлайн и офлайн магазин по продаже
+        <br> мороженого собственного производства на развес
       </h2>
       <ul class="row-container">
         <li>
@@ -184,29 +186,22 @@
     </section>
     <section class="blog">
       <h3>Новое в нашем блоге</h3>
-      <ul>
-        <li>
-          <p>10 способов сервировки фруктовых щербетов к столу</p>
-        </li>
-      </ul>
+      <p>
+        10 способов сервировки фруктовых щербетов к столу
+      </p>
     </section>
-    <section>
+    <section class="newsletter">
       <h1 class="visually-hidden">Рассылка</h1>
-      <ul>
-        <li>
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
-            не спамить и не слать всякой не нужной ерунды. Честно=)</p>
-        </li>
-      </ul>
+      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не
+        спамить и не слать всякой не нужной ерунды. Честно=)</p>
       <form method="post">
         <input type="email" name="email" value="" placeholder="Электронная почта">
-        <button class="button" type="submit">Отправить</button>
+        <button class="button button-orange" type="submit">Отправить</button>
       </form>
     </section>
     <div class="map-container">
       <div class="content-wrapper">
         <div class="gllacy-data">
-          <img scr="img/map.png" width="1050" height="744" alt="Карта">
           <p class="gllacy-address-block">
             <span class="gllacy-address-title">Адрес главного офиса и офлайн магазина:</span>
             <span class="gllacy-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
@@ -216,17 +211,16 @@
             <span class="gllacy-telephone">8 812 450-25-25</span>
             <span class="gllacy-call-time">(с 10 до 20 ежедневно)</span>
           </p>
-          <a class="button" href="#">Форма обратной связи</a>
+          <a class="button button-orange" href="#">Форма обратной связи</a>
           <form method="post">
             <legend>Мы обязательно вам ответим!</legend>
             <input type="name" name="name" value="" placeholder="Как вас зовут?">
             <input type="email" name="email" value="" placeholder="Ваша почта для ответа?">
             <input type="text" name="text" value="" placeholder="Напишите что-нибудь...">
-            <button class="button button-login" type="button">Войти</button>
+            <button class="button button-orange" type="button">Отправить</button>
           </form>
         </div>
       </div>
-      <div class="map" id="map"></div>
   </main>
   <footer class="main-footer">
     <div class="footer-social">
@@ -249,6 +243,7 @@
         </li>
       </ul>
     </div>
+    <div>
     <ul>
       <li>
         <a class="footer-item" href="#">
@@ -264,10 +259,11 @@
         <a class="footer-item" href="#">Экологические стандарты</a>
       </li>
     </ul>
+  </div>
     <div class="design">
       <img src="img/logo-htmlacademy-small.png" width="108" height="39">
       <p>Сделано в
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>2016</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> 2016</p>
     </div>
   </footer>
 </body>

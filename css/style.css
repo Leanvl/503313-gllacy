@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+  
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+
+    background-color: #94b1a1;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .button-orange {
+    font: inherit;
+  
+    text-align: center;
+    color: #ffffff;
+  
+    background-color: #f16542;
+    border: none;
+  }
+
+  .main-navigation {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .site-navigation,
+  .user-navigation,
+  .dropdown-menu {
+    list-style: none;
+  }
+
+  .site-navigation a,
+  .user-navigation a,
+  .dropdown-menu a,
+  .catalog a {
+    color: #ffffff;
+  }
+
+  .site-navigation a:hover,
+  .site-navigation a:focus,
+  .user-navigation a:hover,
+  .user-navigation a:focus,
+  .dropdown-menu a:hover,
+  .dropdown-menu a:focus,
+  .login-problem a:hover,
+  .login-problem a:focus,
+  .catalog a:hover, 
+  .catalog a:focus {
+    background-color: #242424;
+  }
+
+  .login-problem a{
+    font-size: 13px;
+    line-height: 16px;
+    color: #323232;
+    text-decoration: underline;
+  }
+
+  .banner-raspberries {
+    background-color: #8e001e;
+    background-image: url("../img/raspberries.jpg"); 
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+
+  .banner-chocolate {
+    background-color: #85593f;
+    background-image: url("../img/chocolate_chips.jpg"); 
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .banner-title {
+    font-size: 35px;
+    line-height: 41px;
+    text-decoration: none;
+  }
+
+  .catalog-item-title-container {
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    text-decoration: underline;
+    list-style: none;
+  }
+  .shop-features {
+    color: #323232;
+
+    background-color: #efe2cc;
+    background-image: url("../img/wafer.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .shop-features h2 {
+    list-style: none;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .row-container {
+    list-style: none; 
+  }
+
+ {
+    background-image: url("../img/raspberries.jpg");
+    background-repeat: no-repeat;
+}
+
+{
+    background-image: url("../img/chocolate_chips.jpg");
+    background-repeat: no-repeat;
+}
+
+  .blog {
+    background-image: url("../img/strawberry_background.jpg");
+    background-repeat: no-repeat;
+  }
+    
+  .blog h3{
+    font-size: 16px;
+    line-height: 22px;
+    color: #5a5a5a;
+  }
+
+  .blog p {
+    font-size: 24px;
+    line-height: 30px;
+    color: #353535;
+    text-decoration: underline;
+  }
+ 
+  .newsletter {
+    font-size: 16px;
+    line-height: 22px;
+    color: #5a5a5a;
+    text-decoration: none;
+
+    background-color: #f8f7f4;
+  }
+
+  .map-container {
+    color: #323232;
+    background-image: url("../img/map.png");
+    background-repeat: no-repeat;
+  }
+
+  .map-container .gllacy-address-title{
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .map-container .gllacy-address{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  .map-container .gllacy-telephone-title{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .map-container .gllacy-telephone{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .map-container .gllacy-call-time{
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .social-button {
+    text-decoration: none;
+  }
+
+  .footer-item {
+    font-size: 13px;
+    line-height: 18px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .design {
+    font-size: 12px;
+    line-height: 18px;
+    color: #ffffff;
+  }
+
+  .design a {
+    color: #ffffff;
+  }
+
+  .filter-optional {
+    list-style: none;
+  }
+
+  h2 {
+    font-size: 35px;
+    line-height: 41px;
+  }
+
+ .pagination-list {
+  list-style: none;
+ }
+
+ .main-footer {
+  list-style: none;
+ }

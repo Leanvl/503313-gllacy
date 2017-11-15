@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -49,16 +52,18 @@
         </div>
     </header>
     <main>
+        <section>
         <h1 class="visually-hidden">Каталог</h1>
-        <ul class="">
+        <ul class="catalog">
             <li>
                 <a href="index.html">Главная</a>
             </li>
             <li>
                 <a href="catalog.html">Каталог</a>
             </li>
-            <li class="">Сливочное</li>
+            <li class="creamy">Сливочное</li>
         </ul>
+    </section>
         <h2>Сливочное мороженное</h2>
         <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -129,7 +134,7 @@
         <section class="catalog">
             <h2 class="visually-hidden">Список мороженого</h2>
             <ul class="catalog-list">
-                <li class="catalog-item">
+                <li class="catalog-item-title-container">
                     <h3>
                         <a href="catalog-item.html">
                             <span class="catalog-category">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
@@ -145,7 +150,7 @@
                         <a class="button" href="#">Купить</a>
                     </p>
                 </li>
-                <li class="catalog-item">
+                <li class="catalog-item-title-container">
                     <h3>
                         <a href="catalog-item.html">
                             <span class="catalog-category">Сливочно-кофейное с кусочками шоколада</span>
@@ -161,7 +166,7 @@
                         <a class="button" href="#">Купить</a>
                     </p>
                 </li>
-                <li class="catalog-item">
+                <li class="catalog-item-title-container">
                     <h3>
                         <a href="catalog-item.html">
                             <span class="catalog-category">Сливочно-клубничное с присыпкой из белого шоколада</span>
@@ -178,7 +183,7 @@
                     </p>
                     <a class="button button-orange display-none" href="#">Быстрый просмотр</a>
                 </li>
-                <li class="catalog-item">
+                <li class="catalog-item-title-container">
                     <h3>
                         <a href="catalog-item.html">
                             <span class="catalog-category">Сливочное крем-брюле с карамельной подливкой</span>
@@ -194,7 +199,7 @@
                         <a class="button" href="#">Купить</a>
                     </p>
                 </li>
-                <li class="catalog-item">
+                <li class="catalog-item-title-container">
                     <h3>
                         <a href="catalog-item.html">
                             <span class="catalog-category">Сливочное с брусничной стружкой</span>
@@ -210,7 +215,7 @@
                         <a class="button" href="#">Купить</a>
                     </p>
                 </li>
-                <li class="catalog-item">
+                <li class="catalog-item-title-container">
                     <h3>
                         <a href="catalog-item.html">
                             <span class="catalog-category">Сливочно-черничное с цельными ягодами черники</span>
@@ -226,7 +231,7 @@
                         <a class="button" href="#">Купить</a>
                     </p>
                 </li>
-                <li class="catalog-item">
+                <li class="catalog-item-title-container">
                     <h3>
                         <a href="catalog-item.html">
                             <span class="catalog-category">Сливочно-лимонное с карамельнойм присыпкой</span>
@@ -242,7 +247,7 @@
                         <a class="button" href="#">Купить</a>
                     </p>
                 </li>
-                <li class="catalog-item">
+                <li class="catalog-item-title-container">
                     <h3>
                         <a href="catalog-item.html">
                             <span class="catalog-category">Сливочное с шоколадной стружкой</span>
@@ -258,7 +263,7 @@
                         <a class="button" href="#">Купить</a>
                     </p>
                 </li>
-                <li class="catalog-item">
+                <li class="catalog-item-title-container">
                     <h3>
                         <a href="catalog-item.html">
                             <span class="catalog-category">Сливочно-ванильное с кусочками шоколада</span>
@@ -274,7 +279,7 @@
                         <a class="button" href="#">Купить</a>
                     </p>
                 </li>
-                <li class="catalog-item">
+                <li class="catalog-item-title-container">
                     <h3>
                         <a href="catalog-item.html">
                             <span class="catalog-category">Сливочное с ментоловым сиропом</span>
@@ -290,7 +295,7 @@
                         <a class="button" href="#">Купить</a>
                     </p>
                 </li>
-                <li class="catalog-item">
+                <li class="catalog-item-title-container">
                     <h3>
                         <a href="catalog-item.html">
                             <span class="catalog-category">Сливочное с кусочками черного шоколада</span>
@@ -306,7 +311,7 @@
                         <a class="button" href="#">Купить</a>
                     </p>
                 </li>
-                <li class="catalog-item">
+                <li class="catalog-item-title-container">
                     <h3>
                         <a href="catalog-item.html">
                             <span class="catalog-category">Сливочное с мятным сиропом</span>
@@ -323,10 +328,10 @@
                     </p>
                 </li>
                 <ul class="pagination-list">
-                    <li class="pagination-item">
+                    <li class="pagination-item pagination-item-current">
                         <a>1</a>
                     </li>
-                    <li class="pagination-item pagination-item-current">
+                    <li class="pagination-item">
                         <a href="#">2</a>
                     </li>
                     <li class="pagination-item">
@@ -380,7 +385,7 @@
         <div class="design">
             <img src="img/logo-htmlacademy-small.png" width="108" height="39">
             <p>Сделано в
-                <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>2016</p>
+                <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> 2016</p>
         </div>
     </footer>
 </body>
