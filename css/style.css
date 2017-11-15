@@ -108,16 +108,6 @@ body {
     list-style: none; 
   }
 
- {
-    background-image: url("../img/raspberries.jpg");
-    background-repeat: no-repeat;
-}
-
-{
-    background-image: url("../img/chocolate_chips.jpg");
-    background-repeat: no-repeat;
-}
-
   .blog {
     background-image: url("../img/strawberry_background.jpg");
     background-repeat: no-repeat;
