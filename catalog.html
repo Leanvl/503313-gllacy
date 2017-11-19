@@ -53,17 +53,17 @@
     </header>
     <main>
         <section>
-        <h1 class="visually-hidden">Каталог</h1>
-        <ul class="catalog">
-            <li>
-                <a href="index.html">Главная</a>
-            </li>
-            <li>
-                <a href="catalog.html">Каталог</a>
-            </li>
-            <li class="creamy">Сливочное</li>
-        </ul>
-    </section>
+            <h1 class="visually-hidden">Каталог</h1>
+            <ul class="catalog">
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="catalog.html">Каталог</a>
+                </li>
+                <li class="creamy">Сливочное</li>
+            </ul>
+        </section>
         <h2>Сливочное мороженное</h2>
         <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -73,9 +73,9 @@
                     <input type="text" list="sorting" name="sorting">
                     <datalist id="sorting">
                         <option value="по популярности">
-                        <option value="сначала недорогие">
-                        <option value="сначала дорогие">
-                        <option value="по жироности">
+                            <option value="сначала недорогие">
+                                <option value="сначала дорогие">
+                                    <option value="по жироности">
                     </datalist>
                 </fieldset>
                 <fieldset>
@@ -84,7 +84,7 @@
                 </fieldset>
                 <fieldset>
                     <legend>Жирность:</legend>
-                    <ul>
+                    <ul class="filter-optional">
                         <li class="filter-optional">
                             <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-fatiness" id="0">
                             <label for="0">0%</label>
@@ -105,7 +105,7 @@
                 </fieldset>
                 <fieldset>
                     <legend>Наполнители:</legend>
-                    <ul>
+                    <ul class="filter-optional">
                         <li class="filter-optional">
                             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filter-filler" id="chocolate" checked>
                             <label for="chocolate">Шоколадные</label>
@@ -347,27 +347,29 @@
         </section>
     </main>
     <footer class="main-footer">
-        <div class="footer-social">
-            <ul>
-                <li>
-                    <a class="social-button" href="twitter.com">
-                    </a>
-                </li>
-                <li>
-                    <a class="social-button" href="instagram.com">
-                    </a>
-                </li>
-                <li>
-                    <a class="social-button" href="facebook.com">
-                    </a>
-                </li>
-                <li>
-                    <a class="social-button" href="vk.com">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <ul>
+        <ul class="social-button">
+            <li>
+                <a class="social-button" href="twitter.com">
+                    Твиттер
+                </a>
+            </li>
+            <li>
+                <a class="social-button" href="instagram.com">
+                    Инстаграм
+                </a>
+            </li>
+            <li>
+                <a class="social-button" href="facebook.com">
+                    Фейсбук
+                </a>
+            </li>
+            <li>
+                <a class="social-button" href="vk.com">
+                    Вконтакте
+                </a>
+            </li>
+        </ul>
+        <ul class="footer-item">
             <li>
                 <a class="footer-item" href="#">
                     Для поставщиков</a>

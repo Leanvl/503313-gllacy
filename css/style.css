@@ -32,6 +32,8 @@ body {
   .site-navigation,
   .user-navigation,
   .dropdown-menu {
+    margin: 0;
+    padding: 0;
     list-style: none;
   }
 
@@ -51,7 +53,9 @@ body {
   .login-problem a:hover,
   .login-problem a:focus,
   .catalog a:hover, 
-  .catalog a:focus {
+  .catalog a:focus,
+  .social-button a:hover, 
+  .social-button a:focus  {
     background-color: #242424;
   }
 
@@ -105,6 +109,8 @@ body {
   }
 
   .row-container {
+    margin: 0;
+    padding: 0;
     list-style: none; 
   }
 
@@ -197,9 +203,41 @@ body {
   }
 
  .pagination-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
  }
 
  .main-footer {
+  list-style: none;
+ }
+
+ .catalog-list {
+  margin: 0;
+  padding: 0;
+ }
+
+ .footer-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ }
+ 
+ .social-button {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #ffffff;
+ }
+
+ .catalog {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+ }
+
+ .filter-optional {
+  margin: 0;
+  padding: 0;
   list-style: none;
  }
