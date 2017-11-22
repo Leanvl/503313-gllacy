@@ -1,14 +1,12 @@
 body {
-    margin: 0;
-    padding: 0;
-  
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    line-height: 18px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.375;
+    font-family: "Roboto", "Arial", sans-serif;
     color: #ffffff;
-
-    background-color: #94b1a1;
-  }
+    font-weight: 500;
+    background-color: #87a193;
+}
 
   a {
     text-decoration: none;
@@ -24,9 +22,18 @@ body {
     border: none;
   }
 
-  .main-navigation {
-    font-size: 16px;
-    line-height: 18px;
+  .site-navigation {
+    padding: 0;
+    margin-top: 23px;
+    margin-bottom: 20px;
+
+  }
+  
+  .user-navigation {
+    margin-top: 28px;
+    margin-bottom: 18px;
+  
+    float: right;
   }
 
   .site-navigation,
@@ -65,27 +72,55 @@ body {
     color: #323232;
     text-decoration: underline;
   }
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.telephone {
+  float: right;
+  max-width: 170px;
+}
+  .banner {
+    width: 560px;
+    padding: 20px;
+
+    box-sizing: border-box;
+  
+    border-radius: 17px;
+    color: #ffffff;
+  }
 
   .banner-raspberries {
-    background-color: #8e001e;
-    background-image: url("../img/raspberries.jpg"); 
-    background-position: left;
-    background-repeat: no-repeat;
+    margin-left: 450px;
+    float: left;
+    background: #9d0e35 url("../img/raspberries.jpg") no-repeat center center;
   }
 
   .banner-chocolate {
-    background-color: #85593f;
-    background-image: url("../img/chocolate_chips.jpg"); 
-    background-position: right;
-    background-repeat: no-repeat;
+    margin-right: 450px;
+    float: right;
+    background: #26120b url("../img/chocolate_chips.jpg") no-repeat center center;
   }
 
   .banner-title {
-    font-size: 35px;
+    margin-bottom: 15px;
     line-height: 41px;
-    text-decoration: none;
+    font-size: 35px;
+    font-weight: 700;
   }
 
+  .banner-text {
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.hits {
+  margin-bottom: 35px;
+  font-size: 0;
+}
   .catalog-item-title-container {
     font-size: 16px;
     line-height: 22px;
@@ -97,9 +132,10 @@ body {
     color: #323232;
 
     background-color: #efe2cc;
-    background-image: url("../img/wafer.png"); 
-    background-position: center;
-    background-repeat: no-repeat;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: url(../img/wafer.png) repeat-x;
+    border-radius: 13px;
   }
 
   .shop-features h2 {
@@ -114,9 +150,22 @@ body {
     list-style: none; 
   }
 
+  .news {
+    height: 220px;
+    margin-bottom: 40px;
+  }
+
   .blog {
+    float: left;
+    color: #323232;    
+    padding: 20px;
+    width: 562px;
+    height: 221px;
+    box-sizing: border-box;
+    font-weight: 500;
     background-image: url("../img/strawberry_background.jpg");
     background-repeat: no-repeat;
+    border-radius: 17px;
   }
     
   .blog h3{
@@ -133,19 +182,36 @@ body {
   }
  
   .newsletter {
-    font-size: 16px;
-    line-height: 22px;
+    width: 565px;
+    height: 225px;
     color: #5a5a5a;
     text-decoration: none;
-
     background-color: #f8f7f4;
+    background: url(../img/post.jpg) repeat left top;
+    float: right;
+    border-radius: 17px;
+    padding: 6px;
+    box-sizing: border-box;
   }
 
   .map-container {
     color: #323232;
-    background-image: url("../img/map.png");
-    background-repeat: no-repeat;
+    position: relative;
   }
+
+  .gllacy-data {
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  width: 302px;
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #fdfdfd;
+  border-radius: 13px;
+}
 
   .map-container .gllacy-address-title{
     font-size: 14px;
@@ -210,6 +276,7 @@ body {
 
  .main-footer {
   list-style: none;
+  font-size: 0;
  }
 
  .catalog-list {
@@ -228,6 +295,11 @@ body {
   padding: 0;
   list-style: none;
   color: #ffffff;
+  display: inline-block;
+  width: 293px;
+  margin-right: -4px;
+  vertical-align: top;
+  font-size: 14px;
  }
 
  .catalog {
@@ -241,3 +313,21 @@ body {
   padding: 0;
   list-style: none;
  }
+
+ .container-banner {
+  width: 1150px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.banners {
+  margin-bottom: 35px;
+}
+
+.main-slider {
+  position: relative;
+  padding-top: 335px;
+  margin-bottom: 38px;
+  text-align: center;
+  color: #fff;
+}
