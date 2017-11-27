@@ -22,7 +22,7 @@
           </h1>
           <ul class="site-navigation">
             <li>
-              <a class="menu-item main-menu-item" href="catalog.html">Каталог</a>
+              <a class="menu-link" href="catalog.html">Каталог</a>
               <ul class="dropdown-menu">
                 <li>
                   <a class="sub-menu-item dropdown-title" href="#">Новинки</a>
@@ -43,7 +43,7 @@
               </ul>
             </li>
             <li>
-              <a href="delivery.html">Доставка и оплата</a>
+              <a class="menu-link" href="delivery.html">Доставка и оплата</a>
             </li>
             <li>
               <a class="menu-link" href="info.html">О компании</a>
@@ -120,7 +120,7 @@
             <div class="catalog-item-img-container">
               <img src="img/icecream_orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               <b class="price">310₽</b>
-              <span>/кг</span>
+              <span class="unit">/кг</span>
             </div>
             <div class="catalog-item-title-container">
               <a class="link-white catalog-item-title" href="#">
@@ -133,7 +133,7 @@
             <div class="catalog-item-img-container">
               <img src="img/icecream_chocolate.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
               <b class="price">380₽</b>
-              <span>/кг</span>
+              <span class="unit">/кг</span>
             </div>
             <div class="catalog-item-title-container">
               <a class="link-white catalog-item-title" href="#">
@@ -146,7 +146,7 @@
             <div class="catalog-item-img-container">
               <img src="img/icecream_strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
               <b class="price">355₽</b>
-              <span>/кг</span>
+              <span class="unit">/кг</span>
             </div>
             <div class="catalog-item-title-container">
               <a class="link-white catalog-item-title" href="#">
@@ -159,7 +159,7 @@
             <div class="catalog-item-img-container">
               <img src="img/icecream_caramel.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
               <b class="price">415₽</b>
-              <span>/кг</span>
+              <span class="unit">/кг</span>
             </div>
             <div class="catalog-item-title-container">
               <a class="link-white catalog-item-title" href="#">
@@ -217,12 +217,12 @@
             <img src="img/map.jpg" alt="Карта" width="1200" height="430">
             <div class="gllacy-data">
               <p class="gllacy-address-block">
-                <span class="gllacy-address-title">Адрес главного офиса и офлайн магазина:</span>
+                <span class="gllacy-address-title">Адрес главного офиса и офлайн магазина:<br></span>
                 <span class="gllacy-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
               </p>
               <p class="gllacy-telephone-block">
-                <span class="gllacy-telephone-title">Для заказов по телефону:</span>
-                <span class="gllacy-telephone">8 812 450-25-25</span>
+                <span class="gllacy-telephone-title">Для заказов по телефону:<br></span>
+                <span class="gllacy-telephone">8 812 450-25-25<br></span>
                 <span class="gllacy-call-time">(с 10 до 20 ежедневно)</span>
               </p>
               <a class="button button-orange" href="#">Форма обратной связи</a>
@@ -238,48 +238,49 @@
         </div>
       </main>
       <footer class="main-footer">
-        <ul class="social-button">
-          <li>
-            <a class="social-button" href="twitter.com">
-              Твиттер
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="instagram.com">
-              Инстаграм
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="facebook.com">
-              Фейсбук
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="vk.com">
-              Вконтакте
-            </a>
-          </li>
-        </ul>
-        <ul class="footer-item">
-          <li>
-            <a class="footer-item" href="#">
-              Для поставщиков</a>
-          </li>
-          <li>
-            <a class="footer-item" href="#">О производстве</a>
-          </li>
-          <li>
-            <a class="footer-item" href="#">Наши документы</a>
-          </li>
-          <li>
-            <a class="footer-item" href="#">Экологические стандарты</a>
-          </li>
-        </ul>
-        <div class="design">
-          <img src="img/logo-htmlacademy-small.png" width="108" height="39">
-          <p>Сделано в
-            <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> 2016</p>
-        </div>
+        <section class="social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul>
+            <li>
+              <a class="social-button button-tw" href="twitter.com">
+              </a>
+            </li>
+            <li>
+              <a class="social-button button-inst" href="instagram.com">
+              </a>
+            </li>
+            <li>
+              <a class="social-button button-fb" href="facebook.com">
+              </a>
+            </li>
+            <li>
+              <a class="social-button button-vk" href="vk.com">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class "footer-about">
+          <h2 class="visually-hidden">О нас</h2>
+          <ul class="footer-item">
+            <li>
+              <a class="footer-item favorite" href="#">Для поставщиков</a>
+            </li>
+            <li>
+              <a class="footer-item" href="#">О производстве</a>
+            </li>
+            <li>
+              <a class="footer-item" href="#">Наши документы</a>
+            </li>
+            <li>
+              <a class="footer-item" href="#">Экологические стандарты</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-copyright">
+            <img src="img/logo-htmlacademy-small.png" alt="htmlacademy-logo" width="108" height="39">
+            <div>Сделано в
+              <a class="footer-item" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2016</div>>
+        </section>
       </footer>
     </div>
   </div>
