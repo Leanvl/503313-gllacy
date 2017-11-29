@@ -9,6 +9,12 @@ body {
 
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -55,24 +61,21 @@ body {
   vertical-align: top;
 }
 
-.main-navigation h1,
-.site-navigation {
-  float: left;
-}
-
 .site-navigation {
   padding: 0;
   margin-top: 23px;
   margin-bottom: 20px;
   max-width: 56.7%;
+  display: flex;
 }
 
 .user-navigation {
-  max-width: 36%;
+  max-width: 23%;
   margin-top: 28px;
   margin-bottom: 18px;
+  display: flex;
 
-  float: right;
+  
 }
 
 .user-navigation li {
@@ -208,10 +211,25 @@ body {
   line-height: 24px;
 }
 
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-navigation h1 {
   margin-right: 25px;
   margin-top: 9px;
   margin-bottom: 0;
+}
+
+.main-navigation-wrapper{
+width: 70%;
+margin-bottom: 60px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu-item {
@@ -321,6 +339,9 @@ body {
   margin-top: 6px;
   font-size: 22px;
   line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: right;
 }
 
 .main-slider {
@@ -558,7 +579,7 @@ body > input[type="radio"] {
   background: url("../img/rouble.svg") no-repeat;
 }
 
-.catalog-item-title-container a{
+.catalog-item-title-container {
   text-decoration: underline;
   color: #ffffff;
   font-weight: 500;
@@ -648,6 +669,10 @@ body > input[type="radio"] {
     color: #323232;
   }
   
+  .blog-title {
+    font-size: 16px;
+  }
+
   .blog a {
     display: block;
     max-width: 300px;
@@ -676,6 +701,9 @@ body > input[type="radio"] {
   }
   
   .subscribe-desc {
+    display: block;
+    color: #323232;
+    font-size: 16px;
     margin: 0;
     margin-bottom: 30px;
   }
@@ -702,6 +730,14 @@ body > input[type="radio"] {
   .map-container {
     color: #323232;
     position: relative;
+  }
+
+  .gllacy-address-block span {
+    display: block;
+  }
+
+  .gllacy-telephone-block span {
+    display: block;
   }
 
   .gllacy-data {
@@ -871,7 +907,7 @@ body > input[type="radio"] {
   right: 80px;
 }
 
-.footer-copyright div {
+.footer-copyright p {
   margin-top: 64px;
   margin-bottom: 25px;
   font-size: 12px;
