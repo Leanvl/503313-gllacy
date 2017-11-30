@@ -9,6 +9,10 @@ body {
 
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 940px;
   margin: 0 auto;
@@ -62,18 +66,27 @@ body {
 }
 
 .site-navigation {
-  padding: 0;
+  padding: 5px;
   margin-top: 23px;
   margin-bottom: 20px;
   max-width: 56.7%;
   display: flex;
+  list-style: none;
+}
+
+.menu-link {
+  padding: 20px;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .user-navigation {
   max-width: 23%;
-  margin-top: 28px;
+  margin-top: 20px;
   margin-bottom: 18px;
   display: flex;
+  list-style: none;
+  padding: 5px;
 
   
 }
@@ -87,12 +100,19 @@ body {
   width: 34px;
   height: 34px;
   text-indent: -5000px;
-  background: rgba(255, 255, 255, 0.2) url("../img/magnifier.png") no-repeat center;
+  background-image: url("../img/magnifier.png");
+  background-repeat: no-repeat; 
+  background-color: rgba(255, 255, 255, 0.2);
+  background-position: center;
+  
   border-radius: 50%;
 }
 
 .search:hover {
-  background: rgba(248, 247, 244, 1) url("../img/loupe-black.png") no-repeat center;
+  background-image: url("../img/loupe-black.png");
+  background-repeat: no-repeat; 
+  background-color: rgba(248, 247, 244, 1);
+  background-position: center;
 }
 
 .login-link,
@@ -277,6 +297,7 @@ margin-bottom: 60px;
   left: -10px;
   z-index: 10;
   display: none;
+  list-style: none;
 
   padding: 0;
   margin: 0;
@@ -410,7 +431,7 @@ margin-bottom: 60px;
   font-size: 0;
 }
 
-.slider-controls label{
+.slider-controls input{
   display: inline-block;
   width: 17px;
   height: 17px;
@@ -469,7 +490,6 @@ body > input[type="radio"] {
     border: none;
   }
 
-
   .button::after {
     content: "";
     display: table;
@@ -479,6 +499,7 @@ body > input[type="radio"] {
   .banner {
     width: 560px;
     padding: 20px;
+    margin-bottom: 40px;
 
     box-sizing: border-box;
   
@@ -488,12 +509,18 @@ body > input[type="radio"] {
 
   .banner-raspberries {
     float: left;
-    background: #9d0e35 url("../img/raspberries.jpg") no-repeat center center;
+    background-color: #9d0e35;
+    background-image: url("../img/raspberries.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .banner-chocolate {
     float: right;
-    background: #26120b url("../img/chocolate_chips.jpg") no-repeat center center;
+    background-color: #26120b;
+    background-image: url("../img/chocolate_chips.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .banner-title {
@@ -501,12 +528,14 @@ body > input[type="radio"] {
     line-height: 41px;
     font-size: 35px;
     font-weight: 700;
+    color: #ffffff;
   }
 
   .banner-text {
     margin-bottom: 40px;
     font-size: 18px;
     font-weight: 700;
+    color: #ffffff;
 }
 
 .hit {
@@ -515,6 +544,7 @@ body > input[type="radio"] {
 }
 
 .catalog-item {
+  padding: 0;
   position: relative;
 
   display: inline-block;
@@ -548,7 +578,8 @@ body > input[type="radio"] {
   width: 61px;
   height: 61px;
   border-radius: 50%;
-  background: url("../img/hit.png") no-repeat;
+  background-image: url("../img/hit.png");
+  background-repeat: no-repeat;
 }
 
 .price {
@@ -567,6 +598,7 @@ body > input[type="radio"] {
   display: inline-block;
   margin-left: 35px;
   font-size: 30px;
+  color: #ffffff;
 }
 
 .price::after {
@@ -576,10 +608,11 @@ body > input[type="radio"] {
   content: "";
   width: 31px;
   height: 36px;
-  background: url("../img/rouble.svg") no-repeat;
+  background-image: url("../img/rouble.svg");
+  background-repeat: no-repeat;
 }
 
-.catalog-item-title-container {
+.catalog-item-title-container{
   text-decoration: underline;
   color: #ffffff;
   font-weight: 500;
@@ -592,7 +625,8 @@ body > input[type="radio"] {
     background-color: #efe2cc;
     margin-bottom: 40px;
     padding: 20px;
-    background: url(../img/wafer.png) repeat-x;
+    background-image: url(../img/wafer.png);
+    background-repeat: repeat-x;
     border-radius: 13px;
   }
 
@@ -664,7 +698,9 @@ body > input[type="radio"] {
   
     font-weight: 500;
   
-    background: #ffffff url("../img/strawberry_background.jpg") no-repeat;
+    background-color: #ffffff;
+    background-image: url("../img/strawberry_background.jpg");
+    background-repeat: no-repeat;
     border-radius: 17px;
     color: #323232;
   }
@@ -683,9 +719,11 @@ body > input[type="radio"] {
   }
   
   .newsletter-border {
+    display: flex;
     width: 48.87%;
     height: 100%;
-    background: url("../img/post.jpg") repeat left top;
+    background-image: url("../img/email.jpg");
+    background-repeat: repeat;
     float: right;
     border-radius: 17px;
     padding: 6px;
@@ -693,19 +731,24 @@ body > input[type="radio"] {
   }
   
   .nnewsletter {
-    padding: 34px 20px;
-    height: 100%;
-    background-color: #f8f7f4;
+    flex-shrink: 0;
     box-sizing: border-box;
-    border-radius: 13px;
+    width: 548px;
+    min-height: 210px;
+    padding: 20px;
+  
+    background-color: #f8f7f4;
+    border-radius: 15px;
   }
   
   .subscribe-desc {
-    display: block;
-    color: #323232;
-    font-size: 16px;
     margin: 0;
-    margin-bottom: 30px;
+    margin-top: 8px;
+    margin-bottom: 37px;
+    padding: 20px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #5a5a5a;
   }
   
   .newsletter input[type="text"] {
@@ -722,9 +765,12 @@ body > input[type="radio"] {
     float: right;
   }
 
-  .map img {
+  iframe {
     position: relative;
     left: -27px;
+    background-image: url('../img/map.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .map-container {
@@ -784,6 +830,7 @@ body > input[type="radio"] {
   }
 
   .social {
+    margin-left: 25px;
     display: inline-block;
     width: 293px;
     margin-right: -4px;
