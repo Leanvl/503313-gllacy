@@ -10,6 +10,9 @@
 </head>
 
 <body>
+  <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+  <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+  <input class="visually-hidden" type="radio" id="product-3" name="toggle">
   <div class="site-wrapper">
     <div class="content-wrapper">
       <header class="main-header">
@@ -19,7 +22,7 @@
               <h1>
                 <span class="visually-hidden">Gllacy Shop
                 </span>
-                <img src="img/Logo.png" alt="" width="164" height="64">
+                <img src="img/logo.svg" alt="" width="164" height="64">
               </h1>
               <ul class="site-navigation">
                 <li>
@@ -30,16 +33,16 @@
                     </li>
                     <li class="dropdown-line"></li>
                     <li>
-                      <a sub-menu-item href="catalog.html">Сливочное</a>
+                      <a class="sub-menu-item" href="catalog.html">Сливочное</a>
                     </li>
                     <li>
-                      <a sub-menu-item href="#">Щербеты</a>
+                      <a class="sub-menu-item" href="#">Щербеты</a>
                     </li>
                     <li>
-                      <a sub-menu-item href="#">Фруктовый лёд</a>
+                      <a class="sub-menu-item" href="#">Фруктовый лёд</a>
                     </li>
                     <li>
-                      <a sub-menu-item href="#">Мелорин</a>
+                      <a class="sub-menu-item" href="#">Мелорин</a>
                     </li>
                   </ul>
                 </li>
@@ -80,41 +83,33 @@
         </div>
       </header>
       <main>
-        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-        <div class="site-wrapper">
-          <div class="container">
-            <header class="main-header"></header>
-            <section class="slider">
-              <div class="slider-controls">
-                <label for="product-1">Первый</label>
-                <label for="product-2">Второй</label>
-                <label for="product-3">Третий</label>
-              </div>
-              <ul class="slider-list">
-                <li class="slider-item slide" id="slide1">
-                  <h3 class="slide-title">
-                    Крем-брюле и пломбир с малиновым джемом
-                  </h3>
-                  <a class="button slide-button" href="#">Давайте оба!</a>
-                </li>
-                <li class="slider-item slide" id="slide2">
-                  <h3 class="slide-title">
-                    Шоколадный пломбир и лимонный сорбет
-                  </h3>
-                  <a class="button slide-button" href="#">Давайте оба!</a>
-                </li>
-                <li class="slider-item slide" id="slide3">
-                  <h3 class="slide-title">
-                    Пломбир с помадкой и клубничный щербет
-                  </h3>
-                  <a class="button slide-button" href="#">Давайте оба!</a>
-                </li>
-              </ul>
-            </section>
+        <section class="slider">
+          <div class="slider-controls">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
           </div>
-        </div>
+          <ul class="slider-list">
+            <li class="slider-item slide" id="slide1">
+              <h3 class="slide-title">
+                Крем-брюле и пломбир с малиновым джемом
+              </h3>
+              <a class="slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide2">
+              <h3 class="slide-title">
+                Шоколадный пломбир и лимонный сорбет
+              </h3>
+              <a class="slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide3">
+              <h3 class="slide-title">
+                Пломбир с помадкой и клубничный щербет
+              </h3>
+              <a class="slide-button" href="#">Давайте оба!</a>
+            </li>
+          </ul>
+        </section>
         <section class="banners">
           <div class="banner banner-raspberries">
             <div class="banner-title">Малинка даром!</div>
@@ -144,7 +139,7 @@
                 Сливочное с апельсиновым джемом и цитрусовой стружкой
               </a>
             </div>
-            <a class="button button-orange display-none" href="#">Быстрый просмотр</a>
+            <a class="button display-none" href="#">Быстрый просмотр</a>
           </article>
           <article class="catalog-item hit-2">
             <div class="catalog-item-img-container">
@@ -157,7 +152,7 @@
                 Сливочно-кофейное с кусочками шоколада
               </a>
             </div>
-            <a class="button button-orange display-none" href="#">Быстрый просмотр</a>
+            <a class="button display-none" href="#">Быстрый просмотр</a>
           </article>
           <article class="catalog-item hit-3">
             <div class="catalog-item-img-container">
@@ -170,7 +165,7 @@
                 Сливочно-клубничное с присыпкой из белого шоколада
               </a>
             </div>
-            <a class="button button-orange display-none" href="#">Быстрый просмотр</a>
+            <a class="button display-none" href="#">Быстрый просмотр</a>
           </article>
           <article class="catalog-item hit-4">
             <div class="catalog-item-img-container">
@@ -183,7 +178,7 @@
                 Сливочное крем-брюле с карамельной подливкой
               </a>
             </div>
-            <a class="button button-orange display-none" href="#">Быстрый просмотр</a>
+            <a class="button display-none" href="#">Быстрый просмотр</a>
           </article>
         </section>
         <section class="shop-features">
@@ -219,10 +214,10 @@
             <div class="newsletter">
               <p class="subscribe-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
                 не спамить и не слать всякой не нужной ерунды. Честно=)</p>
-              <form method="post">
-                <label for="email" class="visually-hidden">Электронная почта</label>
-                <input type="text" name="email" placeholder="Электронная почта" id="email">
-                <button class="button button-orange" type="submit" name="send">Отправить</button>
+              <form method="post" class="subscribe-form">
+                <label for="email" class="subscribe-form-label">Электронная почта</label>
+                <input class="subscribe-form-email" type="text" name="email" placeholder="Электронная почта" id="email">
+                <button class="button subscribe-form-button" type="submit" name="send">Отправить</button>
               </form>
             </div>
           </div>
@@ -231,7 +226,7 @@
           <div class="map-container">
             <h2 class="visually-hidden">Как нас найти?</h2>
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3400c9621f344353d400825a823ea0908b832d70e2ce9eb35c39e2ec26a1ade5&amp;source=constructor"
-            width="1200" height="430" frameborder="0">Карта</iframe>
+              width="1200" height="430" frameborder="0">Карта</iframe>
             <div class="gllacy-data">
               <p class="gllacy-address-block">
                 <span class="gllacy-address-title">Адрес главного офиса</span>
@@ -243,7 +238,7 @@
                 <span class="gllacy-telephone">8 812 450-25-25</span>
                 <span class="gllacy-call-time">(с 10 до 20 ежедневно)</span>
               </p>
-              <a class="button button-orange" href="#">Форма обратной связи</a>
+              <a class="button" href="#">Форма обратной связи</a>
             </div>
           </div>
         </section>
@@ -252,7 +247,7 @@
           <input type="name" name="name" value="" placeholder="Как вас зовут?">
           <input type="email" name="email" value="" placeholder="Ваша почта для ответа?">
           <input type="text" name="text" value="" placeholder="Напишите что-нибудь...">
-          <button class="button button-orange" type="button">Отправить</button>
+          <button class="button" type="button">Отправить</button>
         </form>
     </div>
     </main>
@@ -296,7 +291,7 @@
         </ul>
       </section>
       <section class="footer-copyright">
-        <img src="img/logo-htmlacademy-small.png" alt="htmlacademy-logo" width="108" height="39">
+        <img src="img/logo-htmlacademy.svg" alt="htmlacademy-logo" width="108" height="39">
         <p>Сделано в
           <a class="footer-item" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2016</p>
       </section>
