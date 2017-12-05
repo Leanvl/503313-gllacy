@@ -10,7 +10,7 @@ body {
 
 body {
   /* Временно для сетки */
-  background-image: url('../img/gllacy-index-1200.jpg');
+  background-image: url('../img/gllacy-catalog-1200.jpg');
   background-size: 1200px;
   background-repeat: no-repeat;
 }
@@ -395,4 +395,17 @@ body {
   color: #ffffff;
   text-decoration: none;
   text-align: right;
+}
+
+
+.breadcrumbs {
+  padding: 0; 
+  margin: 0;
+  margin-bottom: 50px;
+  text-decoration: none;
+  color: #ffffff;
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 24px;
 }

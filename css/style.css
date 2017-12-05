@@ -412,9 +412,60 @@ a {
   text-align: right;
 }
 
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  /* height: 34px;
+  width: 100%; */
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  position: relative;
+
+  margin-right: 19px;
+}
+
+.breadcrumbs li::after {
+  content: ">>";
+
+  position: absolute;
+  top: 1px;
+  right: -10px;
+
+  width: 4px;
+  height: 2px;
+
+}
+
+.creamy::after {
+  display: none;
+}
+
+.filter fieldset {
+  display: inline-block;
+  border: none;
+  margin-bottom: 15px;
+}
+.filter legend {
+  margin-bottom: 16px;
+  
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 18px;
+}
+
+
 .slider {
   position: relative;
-  
   padding-top: 321px;
   
   text-align: center;
@@ -649,20 +700,29 @@ a {
   background-repeat: no-repeat;
 }
 
+.catalog-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  list-style: none;
+}
+
 .catalog-item-container {
   padding: 0;
   position: relative;
   text-align: center;
-  display: inline-block;
-  max-width: 267px;
+  width: 267px;
   margin-right: 25px;
+  margin-bottom: 30px;
 
   font-size: 16px;
 
-  vertical-align: top;
+  /* vertical-align: top; */
 }
 
-.catalog-item-container:last-of-type {
+.catalog-item-container:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -837,15 +897,17 @@ a {
   
   .subscribe-desc {
     margin: 0;
-    margin-top: 8px;
-    margin-bottom: 37px;
-    padding: 20px;
-    line-height: 22px;
+    margin-top: 10px;
+    /* margin-bottom: 15px; */
+    padding: 15px;
+    line-height: 20px;
     font-weight: 400;
     color: #5a5a5a;
   }
 
   .subscribe-form {
+    margin: 20px;
+    margin-bottom: 38px;
     position: relative;
   
     display: flex;
@@ -968,7 +1030,11 @@ a {
 
   .pagination-list{
    padding: 0;
+   margin: 0;
    list-style: none;
+
+    /* Временно для сетки */
+  min-height: 33px;
   }
 
   .main-footer {
