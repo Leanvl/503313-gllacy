@@ -64,12 +64,12 @@
                     <h1 class="visually-hidden">Каталог</h1>
                     <ul class="breadcrumbs">
                         <li>
-                            <a href="index.html">Главная</a>
+                            <a class="breadcrumbs-list" href="index.html">Главная</a>
                         </li>
                         <li>
-                            <a href="catalog.html">Каталог</a>
+                            <a class="breadcrumbs-list" href="catalog.html">Каталог</a>
                         </li>
-                        <li class="creamy">Сливочное</li>
+                        <li class="breadcrumbs-list creamy">Сливочное</li>
                     </ul>
                 </section>
                 <h2>Сливочное мороженное</h2>
@@ -286,27 +286,30 @@
                         </div>
                     </article>
                 </section>
-                <section>
+                <section class="pagination">
+                    <button type="button" class="paginaton-arrow paginaton-arrow-left" title="Листать страницы назад">Листать страницы назад</button>
                     <ul class="pagination-list">
-                        <li class="pagination-item pagination-item-current">
-                            <a>1</a>
+                        <li>
+                            <a class="pagination-list-item pagination-list-item-active">1</a>
                         </li>
-                        <li class="pagination-item">
-                            <a href="#">2</a>
+                        <li>
+                            <a href="#" class="pagination-list-item">2</a>
                         </li>
-                        <li class="pagination-item">
-                            <a href="#">3</a>
+                        <li>
+                            <a href="#" class="pagination-list-item">3</a>
                         </li>
-                        <li class="pagination-item">
-                            <a href="#">4</a>
+                        <li>
+                            <a href="#" class="pagination-list-item">4</a>
                         </li>
-                        <li class="pagination-item">
-                            <a href="#">5</a>
+                        <li>
+                            <a href="#" class="pagination-list-item">5</a>
                         </li>
                     </ul>
+                    <button type="button" class="paginaton-arrow paginaton-arrow-active paginaton-arrow-right" title="Листать страницы вперёд">Листать страницы вперёд</button>
                 </section>
             </main>
-            <footer class="main-footer">
+        </div>
+        <footer class="main-footer">
                 <section class="social">
                     <h2 class="visually-hidden">Социальные сети</h2>
                     <ul>
@@ -351,6 +354,5 @@
                         <a class="footer-item" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
                 </section>
             </footer>
-        </div>
     </div>
 </body>
