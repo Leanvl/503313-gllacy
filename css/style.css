@@ -31,7 +31,7 @@ a {
   justify-content: flex-start;
   width: 164px;
   margin: 0;
-  padding: 0 5px;
+  padding: 0;
 }
 
 .menu-link {
@@ -44,15 +44,15 @@ a {
 .container {
   width: 960px;
   margin: 0;
-  padding: 0 10px;
+  padding-left: 10px;
 }
 
 .phone-container {
   display: flex;
   justify-content: flex-end;
-  width: 1155px;
+  width: 1145.990px;
   margin: 0;
-  padding: 0 10px;
+  padding: 0;
 }
 
 .gray-link {
@@ -61,30 +61,24 @@ a {
   line-height: 24px;
 }
 
-.main-header {
-  margin-bottom: 75px;
-
-  /* Временно для сетки */
-  min-height: 120px;
-}
-
 .main-navigation {
   display: flex;
   flex-direction: column;
-  
 
   /* Временно для сетки */
 
   min-height: 120px;
   background-color: transparent;
-  width: 1200px;
+  width: 1145.990px;
  }
 
-.header-container{
-  margin: 0 auto;
-  padding: 0 10px;
+.header-container {
+  margin: 0;
+  margin-top: 8px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
+  height: 64px;
 }
 
  .main-header-logo {
@@ -105,6 +99,7 @@ a {
 
 .main-navigation-wrapper .container {
   display: flex;
+  justify-content: space-between;
   
 }
 
@@ -137,7 +132,7 @@ a {
 }
 
 .user-navigation {
-  width: 267px;
+  width: 257px;
   margin: 0;
   margin-top: 15px;
   padding: 0;
@@ -291,7 +286,7 @@ a {
   display: block;
   padding-top: 9px;
   padding-bottom: 9px;
-  padding-left: 45px;
+  padding-left: 48px;
   padding-right: 15px;
   border-radius: 20px;
 
@@ -313,7 +308,7 @@ a {
 .cart-link {
   padding-right: 35px;
   background-image: url("../img/basket.svg");
-  background-position-x: 15px;
+  background-position-x: 25px;
   background-position-y: 7px;
   background-repeat: no-repeat;
 }
@@ -466,7 +461,8 @@ a {
 
 .slider {
   position: relative;
-  padding-top: 321px;
+  padding-top: 239px;
+  padding-bottom: 45px;
   
   text-align: center;
   color: #ffffff;
@@ -527,7 +523,7 @@ a {
 
 .slider-controls {
   position: absolute;
-  bottom: 63px;
+  bottom: 64px;
   left: 0;
   z-index: 20;
   
@@ -656,8 +652,12 @@ a {
     color: #ffffff;
 }
 
+  .banner-button {
+    margin-left: 325px; 
+}
+
 .hit {
-  margin-bottom: 35px;
+  margin-bottom: 50px;
   font-size: 0;
 }
 
@@ -755,8 +755,9 @@ a {
 }
 
 .unit {
-  display: inline-block;
-  margin-left: 35px;
+  position: absolute;
+  left: 116px;
+  top: 220px;
   font-size: 30px;
   color: #ffffff;
 }
@@ -801,6 +802,7 @@ a {
     display: inline-block;
     width: 537px;
     margin-top: 25px;
+    margin-bottom: 6px;
     vertical-align: top;
     font-size: 16px;
     box-sizing: border-box;
@@ -836,7 +838,8 @@ a {
   .shop-features_delivery::before {
     background-image: url("../img/thermometer.svg");
   }
-  
+
+
   .news {
     height: 220px;
     margin-bottom: 40px;
@@ -844,7 +847,7 @@ a {
   
   .blog {
     float: left;
-    padding: 20px;
+    padding-left: 20px;
     width: 48.87%;
     height: 100%;
     box-sizing: border-box;
@@ -859,16 +862,20 @@ a {
   }
   
   .blog-title {
+    margin: 0;
+    margin-top: 29px;
     font-size: 16px;
   }
 
   .blog a {
+    margin-top: 8px;
     display: block;
     max-width: 300px;
     color: #323232;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+    text-decoration: underline;
   }
   
   .newsletter-border {
@@ -897,8 +904,8 @@ a {
   
   .subscribe-desc {
     margin: 0;
-    margin-top: 10px;
-    /* margin-bottom: 15px; */
+    margin-top: 23px;
+    font-size: 16px;
     padding: 15px;
     line-height: 20px;
     font-weight: 400;
@@ -990,17 +997,17 @@ a {
   }
 
   .gllacy-data {
-  position: absolute;
-  top: 60px;
-  right: 0px;
-  width: 302px;
-  box-sizing: border-box;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 25px;
-  padding-right: 25px;
-  background-color: #fdfdfd;
-  border-radius: 13px;
+    position: absolute;
+    top: 65px;
+    right: 0px;
+    width: 302px;
+    box-sizing: border-box;
+    padding-top: 19px;
+    padding-bottom: 26px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #fdfdfd;
+    border-radius: 13px;
 }
 
   .map-container .gllacy-address-title{
@@ -1042,9 +1049,9 @@ a {
   }
 
   .social {
-    margin-left: 35px;
+    margin-left: 27px;
     display: inline-block;
-    width: 293px;
+    width: 299px;
     margin-right: -4px;
     vertical-align: top;
     font-size: 14px;
@@ -1063,8 +1070,8 @@ a {
 
 .social-button {
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 29px;
+  height: 29px;
   margin-right: 13px;
 
   border: 4px solid rgba(255, 255, 255, 0.5);
