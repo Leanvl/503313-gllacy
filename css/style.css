@@ -1430,6 +1430,7 @@ h2 {
     background-image: url('../img/map.jpg');
     background-repeat: no-repeat;
     background-size: contain;
+    border: 0;
   }
 
   .map-container {
