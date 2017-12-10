@@ -270,8 +270,6 @@ a {
   min-height: 75px;
 }
 
-.user-navigation > li:hover .search-form,
-.user-navigation > li:hover .login-form,
 .user-navigation > li:hover .product-list {
   display: block;
 }
@@ -365,7 +363,7 @@ a {
 
 .cart-link:hover::after,
 .cart-link:focus::after {
-  background-image: url('../img/cart-black.svg');
+  background-image: url("../img/basket-red.svg");
   background-repeat: no-repeat;
 }
 
@@ -430,11 +428,19 @@ a {
 				 
 }
 
-.user-block-item-wrapper:hover .login-form,
+.modalwindow-visible {
+  /*color: #000000;
+  position: fixed;*/
+  display: block;
+  /*background-color: #f8f7f4;
+  background-position: 0 0;
+  border-radius: 9px;*/
+}
+/* .user-block-item-wrapper:hover .login-form,
 .login-form:hover {
   display: flex;
 			   
-}
+} */
 
 .login-form-input-wrapper {
   position: relative;
@@ -529,10 +535,18 @@ a {
   display: block;
   margin-top: 6px;
   font-size: 22px;
+  font-weight: 800px;
   line-height: 24px;
   color: #ffffff;
   text-decoration: none;
   text-align: right;
+}
+
+h2 {
+  font-size: 35px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .breadcrumbs {
@@ -1406,7 +1420,7 @@ a {
     box-sizing: border-box;
     width: 25px;
     height: 25px;
-    padding-top: 4px;
+    padding-top: 3px;
     color: #ffffff;
 
     text-align: center;
@@ -1423,6 +1437,7 @@ a {
   .pagination-list-item:active {
     color: #333333;
     background-color: rgba(255, 255, 255, 1);
+    cursor: default;
   }
   .pagination-list-item-active,
   .pagination-list-item-active:hover,
@@ -1699,7 +1714,7 @@ a {
   content: "";
 
   position: absolute;
-  top: 0px;
+  top: -2px;
   left: 0px;
 
   display: block;
@@ -1796,24 +1811,28 @@ a {
   box-shadow: inset 0px 1px 2px 1px #696968;
 }
 
-.modal {
+.modal-wrap {
   color: #000000;
   position: fixed;
-
+  display: none;
   background-color: #f8f7f4;
   background-position: 0 0;
   border-radius: 9px;
 }
 
-.modal-feedback {
-  display: none; 
-  top: 335px;
-  left: 37%;
 
+.modal-feedback {
+ position: fixed;
+  top: 120px;
+  left: 50%;
+  z-index: 100;
+  display: block;
   width: 435px;
-  padding: 20px;
-  padding-top: 15px;
-  margin-left: 3px;
+  padding: 21px;
+  padding-bottom: 25px;
+  margin-left: -236px;
+  background-color: #f8f7f4;
+  border-radius: 10px;		
 }
 
 .modal-close {
@@ -1899,3 +1918,14 @@ a {
   font-weight: 10px;
 
 }
+.write-us-input:focus,
+.write-us-sometext:focus {
+  padding: 8px 13px 8px 13px;
+  border: 2px solid rgba(85, 135, 224, 0.52);
+}
+
+.write-us-input:hover,
+.write-us-sometext:hover {
+  padding: 8px 13px 8px 13px;
+  border: 2px solid rgba(153, 153, 153, 0.52);
+}	
