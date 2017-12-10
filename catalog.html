@@ -36,14 +36,85 @@
                                     </li>
                                 </ul>
                                 <ul class="user-navigation">
-                                    <li>
+                                    <li class="user-block-item-wrapper">
                                         <a class="search" href="#">Поиск</a>
+                                        <form class="search-form" name="search-form" action="#" method="get">
+                                            <p>
+                                                <label class="visually-hidden" for="text">Что ищем?</label>
+                                                <input class="search-text" type="text" value="" placeholder="Что ищем?">
+                                            </p>
+                                        </form>
                                     </li>
-                                    <li>
+                                    <li class="user-block-item-wrapper">
                                         <a class="login-link" href="#">Вход</a>
+                                        <form class="login-form form" name="login-form" action="#" method="post">
+                                            <div class="login-form-input-wrapper">
+                                                <input type="email" class="login-form-input" id="login-email" name="email">
+                                                <label for="login-email" class="login-form-label">Электронная почта</label>
+                                            </div>
+                                            <div class="login-form-input-wrapper">
+                                                <input type="password" class="login-form-input" id="login-password" name="password">
+                                                <label for="login-password" class="login-form-label">Пароль</label>
+                                            </div>
+                                            <div class="login-form-input-wrapper">
+                                                <button type="submit" class="btn login-form-btn">Войти</button>
+                                                <ul class="login-form-options">
+                                                    <li>
+                                                        <a href="#">Забыли пароль?</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Новая регистрация</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </form>
                                     </li>
-                                    <li>
+                                    <li class="user-block-item-wrapper">
                                         <a class="cart-link" href="#">2 товара</a>
+                                        <div class="cart-popup form">
+                                            <table class="cart-table">
+                                                <tr class="cart-item">
+                                                    <td class="cart-item-button">
+                                                        <button type="button" class="cart-item-delete" title="Удалить позицию">Удалить</button>
+                                                    </td>
+                                                    <td class="cart-item-image">
+                                                        <a href="#" title="Перейти в карточку товара">
+                                                            <img src="img/ice_mini1.png" width="33" height="33" alt="Фотография мороженого">
+                                                        </a>
+                                                    </td>
+                                                    <td class="cart-item-title">
+                                                        <a class="cart-item-title" href="#" title="Перейти в карточку товара">Пломбир с апельсиновым джемом</a>
+                                                    </td>
+                                                    <td class="cart-item-price">1,5 кг
+                                                        <span>x 200 руб.</span>
+                                                    </td>
+                                                    <td class="cart-item-total-price">300 руб.</td>
+                                                </tr>
+                                                <tr class="cart-item">
+                                                    <td>
+                                                        <button type="button" class="cart-item-delete" title="Удалить позицию">Удалить</button>
+                                                    </td>
+                                                    <td class="cart-item-image">
+                                                        <a href="#" title="Перейти в карточку товара">
+                                                            <img src="img/ice_mini2.png" width="33" height="33" alt="Фотография мороженого">
+                                                        </a>
+                                                    </td>
+                                                    <td class="cart-item-title">
+                                                        <a class="cart-item-title" href="#" title="Перейти в карточку товара">Клубничный пломбир с присыпкой из белого шоколада</a>
+                                                    </td>
+                                                    <td class="cart-item-price">1,5 кг
+                                                        <span>x 300 руб.</span>
+                                                    </td>
+                                                    <td class="cart-item-total-price">450 руб.</td>
+                                                </tr>
+                                            </table>
+                                            <div class="total">
+                                                <div class="total-wapper">
+                                                    <p class="cart-total">Итого: 750 руб.</p>
+                                                    <button type="button" class="btn cart-popup-btn">Оформить заказ</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -125,7 +196,7 @@
                                     <label for="jam">джемы</label>
                                 </div>
                             </div>
-                            <button type="submit" title="Показать мороженое по выбранным параметрам">Применить</button>								
+                            <button type="submit" title="Показать мороженое по выбранным параметрам">Применить</button>
                         </div>
                     </form>
                 </section>
@@ -142,7 +213,7 @@
                                 Сливочное с апельсиновым джемом и цитрусовой стружкой
                             </a>
                         </div>
-						<button type="button" class="catalog-item-button btn">Быстрый просмотр</button>																							
+                        <button type="button" class="catalog-item-button btn">Быстрый просмотр</button>
                     </article>
                     <article class="catalog-item-container">
                         <div>
@@ -155,7 +226,7 @@
                                 Сливочно-кофейное с кусочками шоколада
                             </a>
                         </div>
-						<button type="button" class="catalog-item-button btn">Быстрый просмотр</button>																							
+                        <button type="button" class="catalog-item-button btn">Быстрый просмотр</button>
                     </article>
                     <article class="catalog-item-container">
                         <div>
@@ -358,4 +429,6 @@
             </footer>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
+</html>

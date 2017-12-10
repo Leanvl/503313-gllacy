@@ -1,22 +1,32 @@
+var page = document.querySelector(".site-wrapper");
+
 var contacts = document.querySelector(".map-contacts-btn");
 
-var popup = document.querySelector(".modal-wrap");
-var close = document.querySelector(".modal-close");
-var link = document.querySelector(".login-link");
-var loginform = document.querySelector(".login-form");
 var search = document.querySelector(".search");
 var searchform = document.querySelector(".search-form");
 
+var popup = document.querySelector(".modal-wrap");
+var close = document.querySelector(".modal-close");
 
-contacts.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.add("modal-feedback");
-});
+var link = document.querySelector(".login-link");
+var loginform = document.querySelector(".login-form");
 
-close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.remove("modal-feedback");
-});
+var cart = document.querySelector(".cart-link");
+var cartpopup = document.querySelector(".cart-popup");
+
+if (contacts) {
+	contacts.addEventListener("click", function (evt) {
+		evt.preventDefault();
+		popup.classList.add("modal-feedback");
+	});
+}
+
+if (close) {
+	close.addEventListener("click", function (evt) {
+		evt.preventDefault();
+		popup.classList.remove("modal-feedback");
+	});
+}
 
 link.addEventListener("click", function (evt) {
 	evt.preventDefault();
@@ -24,6 +34,15 @@ link.addEventListener("click", function (evt) {
 		loginform.classList.remove("modalwindow-visible");
 	} else {
 		loginform.classList.add("modalwindow-visible");
+	}
+});
+
+cart.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	if (cartpopup.classList.contains("modalwindow-visible")) {
+		cartpopup.classList.remove("modalwindow-visible");
+	} else {
+		cartpopup.classList.add("modalwindow-visible");
 	}
 });
 
