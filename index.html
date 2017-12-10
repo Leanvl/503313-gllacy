@@ -19,22 +19,19 @@
         <nav class="main-navigation">
           <div class="header-container">
             <div class="logo-container">
-              <div class="logo-navigation">
                 <a class="main-header-logo">
                   <img src="img/logo.svg" alt="" width="164" height="64">
                 </a>
-              </div>
             </div>
             <div class="main-navigation-wrapper">
               <div class="container">
                 <ul class="site-navigation">
-                  <li>
+                  <li class="main-menu-item-wrapper">
                     <a class="menu-link" href="catalog.html">Каталог</a>
                     <ul class="dropdown-menu">
                       <li>
                         <a class="sub-menu-item dropdown-title" href="#">Новинки</a>
                       </li>
-                      <li class="dropdown-line"></li>
                       <li>
                         <a class="sub-menu-item" href="catalog.html">Сливочное</a>
                       </li>
@@ -49,31 +46,45 @@
                       </li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="main-menu-item-wrapper">
                     <a class="menu-link" href="delivery.html">Доставка и оплата</a>
                   </li>
-                  <li>
+                  <li class="main-menu-item-wrapper">
                     <a class="menu-link" href="info.html">О компании</a>
                   </li>
                 </ul>
                 <ul class="user-navigation">
-                  <li>
+                  <li class="user-block-item-wrapper">
                     <a class="search" href="#">Поиск</a>
                     <form class="search-form" name="search-form" action="#" method="get">
-                      <input class="search-text" type="text" value="" placeholder="Что ищем?">
+                      <p>
+                        <label class="visually-hidden" for="text">Что ищем?</label>
+                        <input class="search-text" type="text" value="" placeholder="Что ищем?">
+                      </p>
                     </form>
                   </li>
-                  <li>
+                  <li class="user-block-item-wrapper">
                     <a class="login-link" href="#">Вход</a>
                     <form class="login-form form" name="login-form" action="#" method="post">
-                      <input type="text" placeholder="Электронная почта">
-                      <input type="password" placeholder="Пароль">
-                      <button class="button" type="submit" name="login-button">
-                        Войти
-                      </button>
-                      <div>
-                        <a href="#" class="gray-link">Забыли пароль?</a>
-                        <a href="#" class="gray-link">Новая регистрация</a>
+                      <div class="login-form-input-wrapper">
+                        <input type="email" class="login-form-input" id="login-email" name="email">
+                        <label for="login-email" class="login-form-label">Электронная почта</label>
+								  
+							   
+						   
+																					
+																						   
+                      </div>
+                      <div class="login-form-input-wrapper">
+                        <input type="password" class="login-form-input" id="login-password" name="password">
+                        <label for="login-password" class="login-form-label">Пароль</label>
+                      </div>
+                      <div class="login-form-input-wrapper">
+                        <button type="submit" class="btn login-form-btn">Войти</button>
+                        <ul class="login-form-options">
+                          <li><a href="#">Забыли пароль?</a></li>
+                          <li><a href="#">Новая регистрация</a></li>
+                        </ul>
                       </div>
                     </form>
                   </li>
@@ -146,7 +157,7 @@
         </section>
         <section class="hit">
           <h2 class="visually-hidden">Хиты</h2>
-          <article class="catalog-item hit-1">
+          <article class="catalog-item">
             <div>
               <img src="img/icecream_orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               <b class="price">310</b>
@@ -157,9 +168,9 @@
                 Сливочное с апельсиновым джемом и цитрусовой стружкой
               </a>
             </div>
-            <!-- <a class="button display-none" href="#">Быстрый просмотр</a> -->
+            <button type="button" class="hit-ice-cream-item-button btn">Быстрый просмотр</button>
           </article>
-          <article class="catalog-item hit-2">
+          <article class="catalog-item">
             <div>
               <img src="img/icecream_chocolate.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
               <b class="price">380</b>
@@ -170,7 +181,7 @@
                 Сливочно-кофейное с кусочками шоколада
               </a>
             </div>
-            <!-- <a class="button display-none" href="#">Быстрый просмотр</a> -->
+            <button type="button" class="hit-ice-cream-item-button btn">Быстрый просмотр</button>
           </article>
           <article class="catalog-item hit-3">
             <div>
@@ -183,9 +194,9 @@
                 Сливочно-клубничное с присыпкой из белого шоколада
               </a>
             </div>
-            <!-- <a class="button display-none" href="#">Быстрый просмотр</a> -->
+            <button type="button" class="hit-ice-cream-item-button btn">Быстрый просмотр</button>
           </article>
-          <article class="catalog-item hit-4">
+          <article class="catalog-item">
             <div>
               <img src="img/icecream_caramel.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
               <b class="price">415</b>
@@ -196,7 +207,7 @@
                 Сливочное крем-брюле с карамельной подливкой
               </a>
             </div>
-            <!-- <a class="button display-none" href="#">Быстрый просмотр</a> -->
+            <button type="button" class="hit-ice-cream-item-button btn">Быстрый просмотр</button>
           </article>
         </section>
         <section class="shop-features">
@@ -260,14 +271,25 @@
             </div>
           </div>
         </section>
-        <!-- <form method="post">
-          <legend>Мы обязательно вам ответим!</legend>
-          <input type="name" name="name" value="" placeholder="Как вас зовут?">
-          <input type="email" name="email" value="" placeholder="Ваша почта для ответа?">
-          <input type="text" name="text" value="" placeholder="Напишите что-нибудь...">
-          <button class="button" type="button">Отправить</button>
-        </form> -->
-    </div>
+        <section class="modal modal-feedback">
+          <button class="modal-close" type="button">Закрыть</button>
+          <h2>Мы обязательно вам ответим!</h2>
+          <form class="login-form-feedback" method="post">
+            <p>
+              <label class="visually-hidden" for="name">Как вас зовут?</label>
+              <input type="name" name="name" value="" placeholder="Как вас зовут?">
+            </p>
+            <p>
+              <label class="visually-hidden" for="email">Ваша почта для ответа?</label>
+              <input type="email" name="email" value="" placeholder="Ваша почта для ответа?">
+            </p>
+            <p>
+              <label class="visually-hidden" for="text">Напишите что-нибудь...</label>
+              <input type="text" name="text" value="" placeholder="Напишите что-нибудь...">
+            </p>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </section>
     </main>
     <footer class="main-footer">
       <section class="social">
