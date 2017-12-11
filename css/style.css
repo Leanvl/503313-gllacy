@@ -1,10 +1,13 @@
 html,
 body {
+  padding: 0;
+  margin: 0;
   min-width: 1200px;
   min-height: 1750px;
   font-size: 18px;
   line-height: 1.2;
   font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
   color: #ffffff;
 }
 
@@ -42,15 +45,14 @@ a {
 }
 
 .container {
-  width: 960px;
+  width: 1000px;
   margin: 0;
   padding-left: 10px;
 }
 
 .phone-container {
   display: flex;
-  justify-content: flex-end;
-  width: 1145.990px;
+  
   margin-left: -11px;
   padding: 0;
 }
@@ -64,21 +66,14 @@ a {
 .main-navigation {
   display: flex;
   flex-direction: column;
-
-  /* Временно для сетки */
-
-  min-height: 120px;
-  background-color: transparent;
-  width: 1145.990px;
+  margin-bottom: 25px;
  }
 
 .header-container {
-  margin: 0;
-  margin-top: 8px;
-  padding: 0;
   display: flex;
   justify-content: space-between;
-  height: 64px;
+  align-items: center;
+  align-content: center;
 }
 
  .main-header-logo {
@@ -89,7 +84,8 @@ a {
 
 .main-navigation-wrapper {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: -2px;
+  padding-top: 7px;
 
 }
 
@@ -107,7 +103,6 @@ a {
   display: flex;
 }
 .site-wrapper {
-  max-width: 1200px;
   background-color: rgb(132, 157, 143);
   margin: 0px auto;
   background-repeat: no-repeat;
@@ -116,23 +111,27 @@ a {
 }
 
 .site-navigation {
-  width: 420px;
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  font-weight: 18px;
-  margin-top: 20px;
-  list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 3px;
+  font-size: 16px;
+
+  list-style: none;
 }
 
 .user-navigation {
   display: flex;
-  align-items: flex-start;
-  margin: 0;
-  margin-top: 15px;
+  align-items: flex-end;
   padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-top: 17px;
+  margin-bottom: 1px;
+
+  font-size: 14px;
 
   list-style: none;
 
@@ -160,12 +159,12 @@ a {
 .main-menu-item-wrapper .menu-link {
   display: inline-block;
   vertical-align: top;
-  margin-right: 13px;
+  margin-right: 1px;
   margin-bottom: 5px;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 14px;
-  padding-right: 14px;
+  padding-right: 12px;
 
   font-weight: 700;
   color: #ffffff;
@@ -257,17 +256,11 @@ a {
 }
 
 .phone-navigation-wrapper {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
   margin-bottom: 5px;
 
-}
-
-.phone-navigation {
-  width: 170px;
-  margin: 0;
-  padding: 0;
-
-  min-height: 75px;
 }
 
 .user-navigation > li:hover .product-list {
@@ -489,12 +482,14 @@ a {
 .user-navigation > li > a {
   margin-bottom: 5px;
 }
+
 .phone-navigation {
   font-size: 14px;
   line-height: 16px;
   font-weight: 700px;
   color: #ffffff;
   text-align: right;
+  margin-left: auto;
 }
 
 .phone {
@@ -592,7 +587,7 @@ a {
   color: transparent;
 
   background-color: transparent;
-  background-image: url("../img/X.png");
+  background-image: url("../img/x.png");
   background-repeat: no-repeat;
   border: none;
   overflow: hidden;
@@ -912,31 +907,50 @@ h2 {
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-  .banner {
-    width: 560px;
-    padding: 20px;
+  .banners {
+    position: relative;
+    z-index: 2;
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
     margin-bottom: 40px;
+  }
 
+  .banner {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
-
-    border-radius: 17px;
-    color: #ffffff;
+    align-items: flex-start;
+    width: 560px;
+    height: 229px;
+    padding: 20px;
+    padding-top: 16px;
+    margin-right: 26px;
+  
+    border-radius: 15px;
   }
 
   .banner-raspberries {
-    float: left;
     background-color: #9d0e35;
     background-image: url("../img/raspberries.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    
   }
 
   .banner-chocolate {
-    float: right;
     background-color: #26120b;
     background-image: url("../img/chocolate_chips.jpg");
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  .banner:nth-of-type(2n) {
+    padding-top: 13px;
+    margin-right: 0px;
   }
 
   .banner-title {
@@ -948,14 +962,16 @@ h2 {
   }
 
   .banner-text {
-    margin-bottom: 40px;
+    margin: 0 0 44px;
     font-size: 18px;
     font-weight: 700;
     color: #ffffff;
+    display: block;
+    align-items: flex-start;
 }
 
   .banner-button {
-    margin-left: 325px;
+    align-self: flex-end;
 }
 
 .hit {
@@ -1228,6 +1244,7 @@ h2 {
     background-color: #efe2cc;
     margin-bottom: 40px;
     padding: 20px;
+    padding-top: 25px;
     background-image: url(../img/wafer.png);
     background-repeat: repeat-x;
     border-radius: 13px;
@@ -1248,10 +1265,10 @@ h2 {
   .shop-feature {
     position: relative;
     padding-left: 55px;
+    padding-bottom: 8px;
     display: inline-block;
     width: 537px;
     margin-top: 25px;
-    margin-bottom: 6px;
     vertical-align: top;
     font-size: 16px;
     box-sizing: border-box;
@@ -1290,29 +1307,28 @@ h2 {
 
 
   .news {
-    height: 220px;
+    display: flex;
     margin-bottom: 40px;
   }
 
   .blog {
-    float: left;
-    padding-left: 20px;
-    width: 48.87%;
-    height: 100%;
     box-sizing: border-box;
-
-    font-weight: 500;
-
+    width: 560px;
+    min-height: 220px;
+    padding: 20px;
+    margin-right: 26px;
     background-color: #ffffff;
     background-image: url("../img/strawberry_background.jpg");
     background-repeat: no-repeat;
+  
+    flex-shrink: 0;
     border-radius: 17px;
     color: #323232;
   }
 
   .blog-title {
     margin: 0;
-    margin-top: 29px;
+    margin-top: 5px;
     font-size: 16px;
   }
 
@@ -1329,15 +1345,16 @@ h2 {
 
   .newsletter-border {
     display: flex;
-    width: 48.87%;
-    height: 100%;
+    width: 560px;
+    height: 220px;
     background-image: url("../img/email.jpg");
     background-repeat: repeat;
-    float: right;
     border-radius: 17px;
     border-image: url("../img/bg-post.svg");
     padding: 6px;
     box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
   }
 
   .nnewsletter {
@@ -1426,7 +1443,6 @@ h2 {
 
   iframe {
     position: relative;
-    left: -27px;
     background-image: url('../img/map.jpg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -1438,51 +1454,62 @@ h2 {
     position: relative;
   }
 
-  .gllacy-address-block span {
-    display: block;
-  }
-
-  .gllacy-telephone-block span {
-    display: block;
+  .map .content-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 0px;
   }
 
   .gllacy-data {
     position: absolute;
-    top: 65px;
-    right: 0px;
-    width: 302px;
+    top: 56px;
+    z-index: 1;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     box-sizing: border-box;
-    padding-top: 19px;
-    padding-bottom: 26px;
-    padding-left: 25px;
-    padding-right: 25px;
-    background-color: #fdfdfd;
-    border-radius: 13px;
+    width: 302px;
+    min-height: 305px;
+    padding: 25px;
+    margin-top: 9px;
+  
+    background-color: #fefefd;
+    border-radius: 15px;
 }
 
-  .map-container .gllacy-address-title{
+ .gllacy-address-title {
     font-size: 14px;
     line-height: 20px;
+    margin-bottom: 2px;
   }
 
-  .map-container .gllacy-address{
+ .gllacy-address {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    width: 240px;
+    margin-bottom: 17px;
+    align-self: flex-start;
+  }
+
+.gllacy-telephone-title {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 7px;    
+  }
+
+ .gllacy-telephone{
     font-size: 18px;
     font-weight: 600;
     line-height: 24px;
   }
-
-  .map-container .gllacy-telephone-title{
+.gllacy-call-time {
     font-size: 14px;
     line-height: 20px;
-  }
-  .map-container .gllacy-telephone{
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 24px;
-  }
-  .map-container .gllacy-call-time{
-    font-size: 14px;
-    line-height: 20px;
+    margin-bottom: 26px;
   }
 
   .pagination {
